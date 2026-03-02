@@ -1,0 +1,280 @@
+{
+  "skills": [
+    {
+      "id": "construccion",
+      "name": "Construcción",
+      "category": "Oficios"
+    },
+    {
+      "id": "albanileria",
+      "name": "Albañilería",
+      "category": "Oficios"
+    },
+    {
+      "id": "carpinteria",
+      "name": "Carpintería",
+      "category": "Oficios"
+    },
+    {
+      "id": "electricidad",
+      "name": "Electricidad",
+      "category": "Oficios"
+    },
+    {
+      "id": "plomeria",
+      "name": "Plomería",
+      "category": "Oficios"
+    },
+    {
+      "id": "pintura",
+      "name": "Pintura",
+      "category": "Oficios"
+    },
+    {
+      "id": "soldadura",
+      "name": "Soldadura",
+      "category": "Oficios"
+    },
+    {
+      "id": "jardineria",
+      "name": "Jardinería",
+      "category": "Oficios"
+    },
+    {
+      "id": "cocina",
+      "name": "Cocina",
+      "category": "Servicios"
+    },
+    {
+      "id": "reposteria",
+      "name": "Repostería",
+      "category": "Servicios"
+    },
+    {
+      "id": "limpieza",
+      "name": "Limpieza",
+      "category": "Servicios"
+    },
+    {
+      "id": "cuidado_ninos",
+      "name": "Cuidado de Niños",
+      "category": "Servicios"
+    },
+    {
+      "id": "cuidado_adultos",
+      "name": "Cuidado de Adultos Mayores",
+      "category": "Servicios"
+    },
+    {
+      "id": "mecanica",
+      "name": "Mecánica Automotriz",
+      "category": "Oficios"
+    },
+    {
+      "id": "refrigeracion",
+      "name": "Refrigeración",
+      "category": "Oficios"
+    },
+    {
+      "id": "web_development",
+      "name": "Desarrollo Web",
+      "category": "Tecnología"
+    },
+    {
+      "id": "mobile_development",
+      "name": "Desarrollo Móvil",
+      "category": "Tecnología"
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "category": "Tecnología"
+    },
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "category": "Tecnología"
+    },
+    {
+      "id": "ui_ux",
+      "name": "Diseño UI/UX",
+      "category": "Diseño"
+    },
+    {
+      "id": "diseno_grafico",
+      "name": "Diseño Gráfico",
+      "category": "Diseño"
+    },
+    {
+      "id": "ilustracion",
+      "name": "Ilustración",
+      "category": "Diseño"
+    },
+    {
+      "id": "fotografia",
+      "name": "Fotografía",
+      "category": "Diseño"
+    },
+    {
+      "id": "video_edicion",
+      "name": "Edición de Video",
+      "category": "Diseño"
+    },
+    {
+      "id": "marketing_digital",
+      "name": "Marketing Digital",
+      "category": "Marketing"
+    },
+    {
+      "id": "social_media",
+      "name": "Redes Sociales",
+      "category": "Marketing"
+    },
+    {
+      "id": "seo",
+      "name": "SEO",
+      "category": "Marketing"
+    },
+    {
+      "id": "content_writing",
+      "name": "Redacción de Contenidos",
+      "category": "Marketing"
+    },
+    {
+      "id": "copywriting",
+      "name": "Copywriting",
+      "category": "Marketing"
+    },
+    {
+      "id": "traduccion",
+      "name": "Traducción",
+      "category": "Idiomas"
+    },
+    {
+      "id": "ingles",
+      "name": "Inglés",
+      "category": "Idiomas"
+    },
+    {
+      "id": "portugues",
+      "name": "Portugués",
+      "category": "Idiomas"
+    },
+    {
+      "id": "frances",
+      "name": "Francés",
+      "category": "Idiomas"
+    },
+    {
+      "id": "atencion_cliente",
+      "name": "Atención al Cliente",
+      "category": "Servicios"
+    },
+    {
+      "id": "ventas",
+      "name": "Ventas",
+      "category": "Negocios"
+    },
+    {
+      "id": "administracion",
+      "name": "Administración",
+      "category": "Negocios"
+    },
+    {
+      "id": "contabilidad",
+      "name": "Contabilidad",
+      "category": "Negocios"
+    },
+    {
+      "id": "recursos_humanos",
+      "name": "Recursos Humanos",
+      "category": "Negocios"
+    },
+    {
+      "id": "project_management",
+      "name": "Gestión de Proyectos",
+      "category": "Negocios"
+    },
+    {
+      "id": "data_analysis",
+      "name": "Análisis de Datos",
+      "category": "Tecnología"
+    },
+    {
+      "id": "excel",
+      "name": "Microsoft Excel",
+      "category": "Ofimática"
+    },
+    {
+      "id": "word",
+      "name": "Microsoft Word",
+      "category": "Ofimática"
+    },
+    {
+      "id": "powerpoint",
+      "name": "Microsoft PowerPoint",
+      "category": "Ofimática"
+    },
+    {
+      "id": "automatizacion",
+      "name": "Automatización",
+      "category": "Tecnología"
+    },
+    {
+      "id": "logistica",
+      "name": "Logística",
+      "category": "Operaciones"
+    },
+    {
+      "id": "transporte",
+      "name": "Transporte",
+      "category": "Operaciones"
+    },
+    {
+      "id": "almacen",
+      "name": "Gestión de Almacén",
+      "category": "Operaciones"
+    },
+    {
+      "id": "costura",
+      "name": "Costura",
+      "category": "Oficios"
+    },
+    {
+      "id": "peluqueria",
+      "name": "Peluquería",
+      "category": "Belleza"
+    },
+    {
+      "id": "maquillaje",
+      "name": "Maquillaje",
+      "category": "Belleza"
+    },
+    {
+      "id": "masajes",
+      "name": "Masajes",
+      "category": "Belleza"
+    },
+    {
+      "id": "entrenamiento_personal",
+      "name": "Entrenamiento Personal",
+      "category": "Deportes"
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "category": "Deportes"
+    },
+    {
+      "id": "musica",
+      "name": "Música",
+      "category": "Arte"
+    },
+    {
+      "id": "ensenanza",
+      "name": "Enseñanza",
+      "category": "Educación"
+    }
+  ]
+}
+

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "527994358520",
+    "project_id": "worknow-cdf5a",
+    "storage_bucket": "worknow-cdf5a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527994358520:android:899beeee99ed5187a7c90d",
+        "android_client_info": {
+          "package_name": "com.ozlab.worknow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527994358520-j8g2hu4mr06ksrmb9en76ftv1432sep4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ozlab.worknow",
+            "certificate_hash": "0eec9936c238cad46b495e3b3f8d52086c52403e"
+          }
+        },
+        {
+          "client_id": "527994358520-69ll3i0qgcvl2hnqltappklknv0v130k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDULqCZOaUV45Zwz2FntTZjoWjL5Z85cgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527994358520-69ll3i0qgcvl2hnqltappklknv0v130k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

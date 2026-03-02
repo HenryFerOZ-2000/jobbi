@@ -1,0 +1,140 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Usuarios
+    match /users/{userId} {
+
+      // El usuario solo puede leer y actualizar su propia info
+      allow read, update: if request.auth != null
+                       && request.auth.uid == userId;
+
+      // Admin puede leer/modificar cualquier usuario
+      allow read, update: if request.auth != null
+                        && request.auth.token.isAdmin == true;
+
+      // Nadie puede borrar usuarios desde la app
+      allow delete: if false;
+
+      // Crear solo cuando el usuario se registra
+      allow create: if request.auth != null 
+                  && request.auth.uid == userId;
+      
+      // Subcollections (notifications, reviews, etc.)
+      match /{document=**} {
+        allow read, write: if request.auth != null
+                          && (request.auth.uid == userId || request.auth.token.isAdmin == true);
+      }
+    }
+
+    // Trabajos (jobs)
+    match /jobs/{jobId} {
+      // Todos pueden leer trabajos
+      allow read: if true;
+      
+      // Solo usuarios autenticados pueden crear
+      allow create: if request.auth != null;
+      
+      // Solo el dueño o admin puede actualizar/borrar
+      allow update, delete: if request.auth != null 
+                            && (request.auth.uid == resource.data.ownerId 
+                                || request.auth.token.isAdmin == true);
+    }
+
+    // Aplicaciones a trabajos
+    match /applications/{applicationId} {
+      // El aplicante y el empleador pueden leer
+      allow read: if request.auth != null
+                  && (request.auth.uid == resource.data.userId 
+                      || request.auth.uid == resource.data.employerId
+                      || request.auth.token.isAdmin == true);
+      
+      // Solo el usuario puede aplicar
+      allow create: if request.auth != null
+                    && request.auth.uid == request.resource.data.userId;
+      
+      // El empleador y el usuario pueden actualizar (status changes)
+      allow update: if request.auth != null
+                    && (request.auth.uid == resource.data.employerId
+                        || request.auth.uid == resource.data.userId
+                        || request.auth.token.isAdmin == true);
+      
+      // Solo admin puede borrar
+      allow delete: if request.auth != null
+                    && request.auth.token.isAdmin == true;
+    }
+
+    // Chats
+    match /chats/{chatId} {
+      // Solo los participantes pueden leer/escribir
+      allow read, write: if request.auth != null
+                        && (request.auth.uid in resource.data.participants
+                            || request.auth.token.isAdmin == true);
+      
+      // Subcollection de mensajes
+      match /messages/{messageId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+
+    // Ratings y Reviews
+    match /ratings/{ratingId} {
+      // Todos pueden leer
+      allow read: if true;
+      
+      // Solo usuarios autenticados pueden crear/actualizar su review
+      allow create, update: if request.auth != null
+                            && request.auth.uid == request.resource.data.reviewerId;
+      
+      // Solo admin puede borrar
+      allow delete: if request.auth != null
+                    && request.auth.token.isAdmin == true;
+    }
+
+    // Employer Reviews
+    match /employerReviews/{reviewId} {
+      // Todos pueden leer
+      allow read: if true;
+      
+      // Solo usuarios autenticados pueden crear/actualizar
+      allow create, update: if request.auth != null;
+      
+      // Solo admin puede borrar
+      allow delete: if request.auth != null
+                    && request.auth.token.isAdmin == true;
+    }
+
+    // Favoritos
+    match /favorites/{favoriteId} {
+      // Solo el dueño puede leer/escribir
+      allow read, write: if request.auth != null
+                        && request.auth.uid == resource.data.userId;
+      
+      allow create: if request.auth != null
+                    && request.auth.uid == request.resource.data.userId;
+    }
+
+    // Saved Profiles
+    match /savedProfiles/{profileId} {
+      // Solo el dueño puede leer/escribir
+      allow read, write: if request.auth != null
+                        && request.auth.uid == resource.data.userId;
+      
+      allow create: if request.auth != null
+                    && request.auth.uid == request.resource.data.userId;
+    }
+
+    // Notificaciones push tokens (si los guardas en una colección separada)
+    match /fcmTokens/{tokenId} {
+      allow read, write: if request.auth != null
+                        && request.auth.uid == tokenId;
+    }
+
+    // Default: denegar todo lo demás
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

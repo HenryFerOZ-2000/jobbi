@@ -1,0 +1,101 @@
+{
+  "Ecuador": {
+    "Azuay": [
+      "Cuenca", "Gualaceo", "Paute", "Sígsig", "Chordeleg", "Nabón",
+      "Oña", "San Fernando", "Santa Isabel", "Camilo Ponce Enríquez"
+    ],
+    "Bolívar": [
+      "Guaranda", "Caluma", "Chillanes", "Chimbo", "Echeandía",
+      "Las Naves", "San Miguel"
+    ],
+    "Cañar": [
+      "Azogues", "Biblián", "Cañar", "La Troncal", "El Tambo",
+      "Suscal", "Deleg"
+    ],
+    "Carchi": [
+      "Tulcán", "Bolívar", "Espejo", "Mira", "Montúfar", "San Pedro de Huaca"
+    ],
+    "Chimborazo": [
+      "Riobamba", "Guano", "Chambo", "Colta", "Cumandá",
+      "Guamote", "Pallatanga", "Penipe"
+    ],
+    "Cotopaxi": [
+      "Latacunga", "La Mana", "Pujilí", "Salcedo", "Saquisilí",
+      "Sigchos"
+    ],
+    "El Oro": [
+      "Machala", "Arenillas", "Atahualpa", "Balsas", "Chilla",
+      "El Guabo", "Huaquillas", "Marcabelí", "Pasaje", "Piñas",
+      "Portovelo", "Santa Rosa", "Zaruma"
+    ],
+    "Esmeraldas": [
+      "Esmeraldas", "Atacames", "Muisne", "Quinindé",
+      "Río Verde", "San Lorenzo"
+    ],
+    "Galápagos": [
+      "Puerto Ayora", "Puerto Baquerizo Moreno", "Puerto Villamil"
+    ],
+    "Guayas": [
+      "Guayaquil", "Daule", "Durán", "Milagro", "Samborondón",
+      "Balao", "Balzar", "Colimes", "El Empalme", "El Triunfo",
+      "General Villamil Playas", "Isidro Ayora", "Lomas de Sargentillo",
+      "Naranjal", "Naranjito", "Nobol", "Palestina", "Pedro Carbo",
+      "Salitre", "Santa Lucía", "Simón Bolívar", "Yaguachi"
+    ],
+    "Imbabura": [
+      "Ibarra", "Antonio Ante", "Cotacachi", "Otavalo", "Pimampiro",
+      "San Miguel de Urcuquí"
+    ],
+    "Loja": [
+      "Loja", "Catamayo", "Macará", "Celica", "Chaguarpamba",
+      "Espíndola", "Gonzanamá", "Paltas", "Puyango", "Quilanga",
+      "Saraguro"
+    ],
+    "Los Ríos": [
+      "Babahoyo", "Quevedo", "Ventanas", "Valencia", "Buena Fe",
+      "Mocache", "Montalvo", "Palenque", "Pueblo Viejo",
+      "Quinsaloma", "Urdaneta", "Vínces"
+    ],
+    "Manabí": [
+      "Portoviejo", "Manta", "Chone", "Jipijapa", "Paján", "Bahía de Caráquez",
+      "Pedernales", "El Carmen", "Montecristi", "Tosagua", "Rocafuerte"
+    ],
+    "Morona Santiago": [
+      "Macas", "Gualaquiza", "Limón Indanza", "Palora", "San Juan Bosco",
+      "Santiago", "Sucúa", "Taisha", "Huamboya", "Pablo Sexto"
+    ],
+    "Napo": [
+      "Tena", "Archidona", "Carlos Julio Arosemena Tola", "El Chaco",
+      "Quijos"
+    ],
+    "Orellana": [
+      "Coca", "Joya de los Sachas", "Loreto", "Aguarico"
+    ],
+    "Pastaza": [
+      "Puyo", "Mera", "Santa Clara", "Arajuno"
+    ],
+    "Pichincha": [
+      "Quito", "Cayambe", "Rumiñahui", "Mejía", "Pedro Vicente Maldonado",
+      "Puerto Quito", "San Miguel de los Bancos"
+    ],
+    "Santa Elena": [
+      "Santa Elena", "La Libertad", "Salinas"
+    ],
+    "Santo Domingo de los Tsáchilas": [
+      "Santo Domingo", "La Concordia"
+    ],
+    "Sucumbíos": [
+      "Nueva Loja", "Cuyabeno", "Gonzalo Pizarro", "Lago Agrio",
+      "Putumayo", "Shushufindi", "Sucumbíos"
+    ],
+    "Tungurahua": [
+      "Ambato", "Baños", "Cevallos", "Mocha", "Patate", "Pelileo",
+      "Píllaro", "Quero", "Tisaleo"
+    ],
+    "Zamora Chinchipe": [
+      "Zamora", "Yacuambi", "Yantzaza", "El Pangui",
+      "Chinchipe", "Palanda", "Paquisha", "Nangaritza"
+    ]
+  }
+}
+
